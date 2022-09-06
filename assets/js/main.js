@@ -88,6 +88,14 @@ const contact_form = document.getElementById("contact");
 contact_form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	const subject = document.getElementById("subject");
-	subject.value = "Form Submission: " + subject.value;
-	contact_form.submit()
+	const email = document.getElementById("email");
+	const message = document.getElementById("message");
+	window.open(`mailto:info@thedataprotectors.com?\
+	subject=${subject.value}\
+	&body=${message.value}
+	`)
+	// subject.value = "Form Submission: " + subject.value;
+	// contact_form.submit()
+
+	// then redirect to https://www.thedataprotectors.com/
 });
