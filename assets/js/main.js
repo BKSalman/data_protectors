@@ -89,11 +89,12 @@ contact_form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	const subject = document.getElementById("subject");
 	const email = document.getElementById("email");
+	const number = document.getElementById("number");
 	const message = document.getElementById("message");
-	window.open(`mailto:info@thedataprotectors.com?\
+	window.location.href = `mailto:info@thedataprotectors.com?\
 	subject=${subject.value}\
-	&body=${message.value}
-	`)
+	&body=number:${number.value}%0A%0A${message.value}
+	`;
 	// subject.value = "Form Submission: " + subject.value;
 	// contact_form.submit()
 
