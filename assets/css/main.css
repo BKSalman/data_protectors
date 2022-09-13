@@ -890,8 +890,7 @@ Our Classes
 
 .tabs-content img {
   max-width: 100%;
-  min-width: 700px;
-  min-height: 300px;
+  min-width: 20em;
   overflow: hidden;
   border-radius: 5px;
 }
